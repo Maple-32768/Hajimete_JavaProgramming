@@ -21,7 +21,10 @@ public class A2_3 {
         if (max < 2) throw new IllegalArgumentException("Prime numbers are defined for integers greater than or equal to 2.");
         List<Integer> result = new ArrayList<>();
         if (max <= max_checked_numbers) {
-            for (int i = 0; prime_numbers.get(i) <= max; i++) result.add(prime_numbers.get(i));
+            for (int i = 0; i < prime_numbers.size(); i++) {
+                if (prime_numbers.get(i) > max) break;
+                result.add(prime_numbers.get(i));
+            }
         } else {
             for (int i = max_checked_numbers; i <= max; i++) {
                 if (i < 2) continue;
