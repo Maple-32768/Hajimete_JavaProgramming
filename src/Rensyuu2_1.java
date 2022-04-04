@@ -6,6 +6,6 @@ public class Rensyuu2_1 {
     public static void main(String[] args) {
         System.out.println("氏名: " + name);
         System.out.println("住所: " + address);
-        System.out.println("生年月日" + birthday);
+        System.out.println("生年月日: " + birthday);
     }
 }
