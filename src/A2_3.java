@@ -15,6 +15,7 @@ public class A2_3 {
         System.out.print("最大値>> ");
         int max = Integer.parseInt(scan.nextLine());
         System.out.println(getPrime_numbersFromRange(min, max).size());
+        scan.close();
     }
 
     public static List<Integer> getPrime_numbers(int max){

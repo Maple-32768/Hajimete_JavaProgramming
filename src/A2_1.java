@@ -6,6 +6,7 @@ public class A2_1 {
         System.out.print("自然数nを入力>> ");
         int n = Integer.parseInt(scan.nextLine());
         System.out.println("nは素数" + (isPrimeNumber(n) ? "です" : "ではありません") + ".");
+        scan.close();
     }
 
     public static boolean isPrimeNumber(int n){

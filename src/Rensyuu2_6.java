@@ -9,5 +9,6 @@ public class Rensyuu2_6 {
         System.out.print("B:");
         b = Double.parseDouble(scan.nextLine());
         System.out.println(a + " % " + b + " = " + a % b);
+        scan.close();
     }
 }

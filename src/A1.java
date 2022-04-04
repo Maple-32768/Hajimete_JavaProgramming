@@ -15,11 +15,13 @@ public class A1 {
         int max_index = maxIndex(lines);
         if (!isTriangle(lines, max_index)) {
             System.out.println(getResultString(lines) + "では三角形は作れません.");
+            scan.close();
             return;
         }
 
         if (isEqTriangle(lines)){
             System.out.println(getResultString(lines) + "で正三角形が作れます.");
+            scan.close();
             return;
         }
 
@@ -33,6 +35,7 @@ public class A1 {
         } else {
             System.out.println(getResultString(lines) + "で三角形が作れます.");
         }
+        scan.close();
     }
 
     public static int maxIndex(int[] v){
