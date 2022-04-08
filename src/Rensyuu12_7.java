@@ -15,7 +15,7 @@ public class Rensyuu12_7 {
     public static int gcd(int a, int b){
         int i = Math.min(a, b);
         while (i > 0){
-            if (a % i == 0 && b % i-- == 0) break;
+            if (a % i == 0 && b % i == 0) break;
             i--;
         }
         return i;
