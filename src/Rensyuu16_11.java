@@ -24,7 +24,7 @@ public class Rensyuu16_11 {
             }
             boolean isFirst = true;
             for (TestScore testScore : list) {
-                if (testScore.sum_score == max_sum){
+                if (testScore.sum_score == max_sum) {
                     if (isFirst) isFirst = false;
                     else pw.println();
                     pw.println(testScore);
@@ -36,14 +36,14 @@ public class Rensyuu16_11 {
         }
     }
 
-    private static class TestScore{
+    private static class TestScore {
         public final String name;
         public final int japanese;
         public final int math;
         public final int english;
         public final int sum_score;
 
-        public TestScore(String n, int[] scores){
+        public TestScore(String n, int[] scores) {
             name = n;
             japanese = scores[0];
             math = scores[1];

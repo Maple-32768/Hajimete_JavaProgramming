@@ -6,9 +6,9 @@ import java.util.Scanner;
 public class Rensyuu16_7 {
     private static final String file_path = "files/16_7.txt";
 
-    public static void main(String[] args){
-        try(Scanner scan = new Scanner(new BufferedReader(new FileReader(file_path)))){
-            while (scan.hasNext()){
+    public static void main(String[] args) {
+        try (Scanner scan = new Scanner(new BufferedReader(new FileReader(file_path)))) {
+            while (scan.hasNext()) {
                 int sum = 0;
                 for (int i = 0; i < 3; i++) {
                     int n = Integer.parseInt(scan.next());

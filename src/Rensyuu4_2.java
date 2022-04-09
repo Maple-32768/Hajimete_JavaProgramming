@@ -9,7 +9,7 @@ public class Rensyuu4_2 {
         scan.close();
     }
 
-    public static int abs(int n){
+    public static int abs(int n) {
         return n < 0 ? n * -1 : n;
     }
 }

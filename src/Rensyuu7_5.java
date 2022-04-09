@@ -5,7 +5,7 @@ public class Rensyuu7_5 {
 
     public static void main(String[] args) {
         int n = 0, money = MONEY1;
-        while(money < MONEY2){
+        while (money < MONEY2) {
             money *= 1 + (PERCENT / 100.0);
             n++;
         }

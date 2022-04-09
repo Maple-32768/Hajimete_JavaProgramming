@@ -8,7 +8,7 @@ public class Rensyuu5_7 {
         n = Integer.parseInt(scan.nextLine());
         System.out.println("整数m");
         m = Integer.parseInt(scan.nextLine());
-        for (int i = Math.max(n, m); i <= (m * n); i++) if(i % n == 0 && i % m == 0) System.out.println(i);
+        for (int i = Math.max(n, m); i <= (m * n); i++) if (i % n == 0 && i % m == 0) System.out.println(i);
         scan.close();
     }
 

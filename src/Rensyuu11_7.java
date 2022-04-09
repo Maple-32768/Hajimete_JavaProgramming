@@ -27,17 +27,17 @@ public class Rensyuu11_7 {
 
     private static final ZodiacSign[] signs = {
             new ZodiacSign(3, 21, 4, 20, "牡羊座"),
-            new ZodiacSign(4, 21, 5, 20,"牡牛座"),
-            new ZodiacSign(5, 21, 6, 21,"双子座"),
-            new ZodiacSign(6, 22, 7, 22,"蟹座"),
-            new ZodiacSign(7, 23, 8, 22,"獅子座"),
-            new ZodiacSign(8, 23, 9, 22,"乙女座"),
-            new ZodiacSign(9, 23, 10, 21,"天秤座"),
-            new ZodiacSign(10, 21, 11, 21,"蠍座"),
-            new ZodiacSign(11, 22, 21, 21,"射手座"),
-            new ZodiacSign(12, 22, 1, 19,"山羊座"),
-            new ZodiacSign(1, 20, 2, 18,"水瓶座"),
-            new ZodiacSign(2, 19, 3, 20,"魚座")
+            new ZodiacSign(4, 21, 5, 20, "牡牛座"),
+            new ZodiacSign(5, 21, 6, 21, "双子座"),
+            new ZodiacSign(6, 22, 7, 22, "蟹座"),
+            new ZodiacSign(7, 23, 8, 22, "獅子座"),
+            new ZodiacSign(8, 23, 9, 22, "乙女座"),
+            new ZodiacSign(9, 23, 10, 21, "天秤座"),
+            new ZodiacSign(10, 21, 11, 21, "蠍座"),
+            new ZodiacSign(11, 22, 21, 21, "射手座"),
+            new ZodiacSign(12, 22, 1, 19, "山羊座"),
+            new ZodiacSign(1, 20, 2, 18, "水瓶座"),
+            new ZodiacSign(2, 19, 3, 20, "魚座")
     };
 
     public static void main(String[] args) {

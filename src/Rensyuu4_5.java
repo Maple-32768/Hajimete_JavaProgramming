@@ -5,14 +5,14 @@ public class Rensyuu4_5 {
         Scanner scan = new Scanner(System.in);
         int[] nums = new int[2];
         for (int i = 0; i < 2; i++) {
-            System.out.println((i+1) + "番目の整数を入力");
+            System.out.println((i + 1) + "番目の整数を入力");
             nums[i] = Integer.parseInt(scan.nextLine());
         }
         System.out.println(maxInt(nums));
         scan.close();
     }
 
-    public static int maxInt(int[] nums){
+    public static int maxInt(int[] nums) {
         int max = Integer.MIN_VALUE;
         for (int i : nums) {
             max = Math.max(max, i);

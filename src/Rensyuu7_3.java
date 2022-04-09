@@ -6,7 +6,7 @@ public class Rensyuu7_3 {
         int x, sum = 0;
         System.out.println("整数x");
         x = Integer.parseInt(scan.nextLine());
-        while(x > 0){
+        while (x > 0) {
             sum += x % 10;
             x /= 10;
         }

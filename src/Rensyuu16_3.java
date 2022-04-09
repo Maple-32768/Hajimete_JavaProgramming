@@ -7,8 +7,8 @@ import java.util.Scanner;
 public class Rensyuu16_3 {
     private static final String file_path = "files/16_3.txt";
 
-    public static void main(String[] args){
-        try(Scanner scan = new Scanner(System.in);PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter(file_path)))){
+    public static void main(String[] args) {
+        try (Scanner scan = new Scanner(System.in); PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter(file_path)))) {
             int[] nums = new int[5];
             for (int i = 0; i < 5; i++) {
                 System.out.println((i + 1) + "番目の数");
@@ -34,7 +34,7 @@ public class Rensyuu16_3 {
         }
     }
 
-    public static int sum (int[] array){
+    public static int sum(int[] array) {
         int sum = 0;
         for (int i : array) {
             sum += i;
@@ -42,7 +42,7 @@ public class Rensyuu16_3 {
         return sum;
     }
 
-    public static int average(int[] array){
+    public static int average(int[] array) {
         int sum = sum(array);
         return sum / array.length;
     }

@@ -6,7 +6,7 @@ public class Rensyuu7_2 {
         int x;
         System.out.println("整数x");
         x = Integer.parseInt(scan.nextLine());
-        System.out.println((int)Math.log10(x) + 1);
+        System.out.println((int) Math.log10(x) + 1);
         scan.close();
     }
 }

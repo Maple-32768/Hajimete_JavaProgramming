@@ -4,8 +4,8 @@ public class Rensyuu11_1 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = Integer.parseInt(String.valueOf(scan.nextLine().charAt(0)));
-        String eng  = "";
-        switch (n){
+        String eng = "";
+        switch (n) {
             case 0:
                 eng = "zero";
                 break;

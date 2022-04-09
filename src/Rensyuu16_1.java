@@ -7,8 +7,8 @@ import java.util.Scanner;
 public class Rensyuu16_1 {
     private static final String file_path = "files/16_1.txt";
 
-    public static void main(String[] args){
-        try(Scanner scan = new Scanner(System.in);PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter(file_path)))){
+    public static void main(String[] args) {
+        try (Scanner scan = new Scanner(System.in); PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter(file_path)))) {
             System.out.println("氏名");
             String name = scan.nextLine();
             System.out.println("住所");

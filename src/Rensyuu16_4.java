@@ -7,8 +7,8 @@ import java.util.Random;
 public class Rensyuu16_4 {
     private static final String file_path = "files/16_4.txt";
 
-    public static void main(String[] args){
-        try(PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter(file_path)))){
+    public static void main(String[] args) {
+        try (PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter(file_path)))) {
             Random rand = new Random();
             for (int i = 0; i < 50; i++) {
                 for (int j = 0; j < 10; j++) {

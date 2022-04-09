@@ -19,11 +19,11 @@ public class A2_2 {
         System.out.println("3桁の回文素数は" + count + "個");
     }
 
-    public static boolean isPalindrome(String str){
+    public static boolean isPalindrome(String str) {
         return str.equals(reverse(str));
     }
 
-    public static String reverse(String str){
+    public static String reverse(String str) {
         StringBuilder result = new StringBuilder();
         for (int i = 0, length = str.length(); i < length; i++) {
             result.append(str.charAt(length - i - 1));

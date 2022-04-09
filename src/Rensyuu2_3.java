@@ -11,7 +11,7 @@ public class Rensyuu2_3 {
                 o8 = 1.2 + 3.2 /* 1.2 + 3.2 = 4.4 */,
                 o9 = 3 / 2 + 4 * 1.1 /* 3 / 2 + 4 * 1.1 = 1 + 4.4 = 5.4 */,
                 o10 = 3 / 2.0 + 4 * 1.1 /* 3 / 2.0 + 4 * 1.1 = 1.5 + 4.4 = 5.9 */;
-                System.out.println(o1);
+        System.out.println(o1);
         System.out.println(o1 + "が答です");
         System.out.println("答は" + o1);
 

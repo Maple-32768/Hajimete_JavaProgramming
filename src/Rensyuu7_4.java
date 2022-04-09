@@ -9,7 +9,7 @@ public class Rensyuu7_4 {
         int x;
         System.out.println("整数x");
         x = Integer.parseInt(scan.nextLine());
-        System.out.println("nの最大値 : " + (int)((Math.sqrt(8 * x + 1) - 1) / 2));
+        System.out.println("nの最大値 : " + (int) ((Math.sqrt(8 * x + 1) - 1) / 2));
         scan.close();
     }
 }

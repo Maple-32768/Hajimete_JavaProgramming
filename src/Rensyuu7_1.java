@@ -9,7 +9,7 @@ public class Rensyuu7_1 {
         System.out.println("整数y");
         y = Integer.parseInt(scan.nextLine());
         q = x;
-        while(q >= y) q -= y;
+        while (q >= y) q -= y;
         System.out.println(x + " % " + y + " = " + q);
         scan.close();
     }

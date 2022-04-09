@@ -1,5 +1,5 @@
 public class Rensyuu15_2 {
-    abstract static class AirVehicle{
+    abstract static class AirVehicle {
         private final int max_passengers;
         private int passengers;
 
@@ -7,53 +7,54 @@ public class Rensyuu15_2 {
             this.max_passengers = max_passengers;
         }
 
-        protected void getOn(){
+        protected void getOn() {
             if (passengers < max_passengers) passengers++;
         }
 
-        protected void getOff(){
+        protected void getOff() {
             if (passengers > 0) passengers--;
         }
 
         abstract int maxHeight();
+
         abstract boolean haveEngine();
     }
 
-     static class Plane extends AirVehicle{
+    static class Plane extends AirVehicle {
 
-         public Plane() {
-             super(100);
-         }
+        public Plane() {
+            super(100);
+        }
 
-         @Override
-         int maxHeight() {
-             return 20000;
-         }
+        @Override
+        int maxHeight() {
+            return 20000;
+        }
 
-         @Override
-         boolean haveEngine() {
-             return true;
-         }
-     }
+        @Override
+        boolean haveEngine() {
+            return true;
+        }
+    }
 
-     static class SmallPlane extends AirVehicle{
-        public SmallPlane(){
+    static class SmallPlane extends AirVehicle {
+        public SmallPlane() {
             super(4);
         }
 
-         @Override
-         int maxHeight() {
-             return 10000;
-         }
+        @Override
+        int maxHeight() {
+            return 10000;
+        }
 
-         @Override
-         boolean haveEngine() {
-             return true;
-         }
-     }
+        @Override
+        boolean haveEngine() {
+            return true;
+        }
+    }
 
-    static class Helicopter extends AirVehicle{
-        public Helicopter(){
+    static class Helicopter extends AirVehicle {
+        public Helicopter() {
             super(4);
         }
 
@@ -68,8 +69,8 @@ public class Rensyuu15_2 {
         }
     }
 
-    static class Glider extends AirVehicle{
-        public Glider(){
+    static class Glider extends AirVehicle {
+        public Glider() {
             super(1);
         }
 
@@ -84,8 +85,8 @@ public class Rensyuu15_2 {
         }
     }
 
-    static class UFO extends AirVehicle{
-        public UFO(){
+    static class UFO extends AirVehicle {
+        public UFO() {
             super(Integer.MAX_VALUE);
         }
 

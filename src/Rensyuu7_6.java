@@ -10,7 +10,7 @@ public class Rensyuu7_6 {
         boolean first = true;
         while (n != 1) {
             if (n % i == 0) {
-                System.out.print((first ? "" : " * " ) + i);
+                System.out.print((first ? "" : " * ") + i);
                 n /= i;
                 first = false;
             } else i++;

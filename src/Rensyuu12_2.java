@@ -11,9 +11,9 @@ public class Rensyuu12_2 {
         System.out.println("a + b = " + add(a, b));
         System.out.println("a - b = " + remove(a, b));
         System.out.println("a * b = " + multiply(a, b));
-        try{
+        try {
             System.out.println("a / b = " + divide(a, b));
-        } catch (IllegalArgumentException e){
+        } catch (IllegalArgumentException e) {
             System.out.println("Cannot calculate a / b, because b = 0");
         }
         scan.close();
@@ -23,15 +23,15 @@ public class Rensyuu12_2 {
         return a + b;
     }
 
-    public static int remove(int a, int b){
+    public static int remove(int a, int b) {
         return a - b;
     }
 
-    public static int multiply(int a, int b){
+    public static int multiply(int a, int b) {
         return a * b;
     }
 
-    public static int divide(int a, int b){
+    public static int divide(int a, int b) {
         if (b == 0) throw new IllegalArgumentException("/0 is not defined.");
         return a / b;
     }

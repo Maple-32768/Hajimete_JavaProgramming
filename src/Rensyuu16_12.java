@@ -39,11 +39,11 @@ public class Rensyuu16_12 {
         }
     }
 
-    private static class TestScore{
+    private static class TestScore {
         public final String name;
         public final int[] scores;
 
-        public TestScore(String n, int[] scores){
+        public TestScore(String n, int[] scores) {
             name = n;
             this.scores = scores;
         }

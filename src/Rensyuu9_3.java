@@ -15,7 +15,7 @@ public class Rensyuu9_3 {
         scan.close();
     }
 
-    public static int determinant3(int[][] matrix){
+    public static int determinant3(int[][] matrix) {
         if (matrix.length != 3 || matrix[0].length != 3) throw new IllegalArgumentException();
         int det = 0;
         for (int i = 0; i < 3; i++) {

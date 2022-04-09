@@ -1,6 +1,6 @@
 import java.util.Objects;
 
-public class Fraction implements Cloneable{
+public class Fraction implements Cloneable {
     //14.1
     private int top;
     private int bottom;
@@ -25,7 +25,7 @@ public class Fraction implements Cloneable{
         return top + "/" + this.bottom;
     }
 
-    private void fix(){
+    private void fix() {
         if (bottom < 0) {
             bottom *= -1;
             top *= -1;
@@ -33,15 +33,15 @@ public class Fraction implements Cloneable{
         this.reduction();
     }
 
-    private void reduction(){
+    private void reduction() {
         int gcd = gcd(Math.abs(top), bottom);
         top /= gcd;
         bottom /= gcd;
     }
 
-    private static int gcd(int a, int b){
+    private static int gcd(int a, int b) {
         int i = Math.min(a, b);
-        while (i > 0){
+        while (i > 0) {
             if (a % i == 0 && b % i == 0) break;
             i--;
         }
@@ -49,7 +49,7 @@ public class Fraction implements Cloneable{
     }
 
     //14.5
-    public Fraction add(Fraction other){
+    public Fraction add(Fraction other) {
         Fraction clone = null, other_clone;
         try {
             clone = clone();
@@ -62,7 +62,7 @@ public class Fraction implements Cloneable{
         return clone;
     }
 
-    public static void reduceDenominator(Fraction a, Fraction b){
+    public static void reduceDenominator(Fraction a, Fraction b) {
         int d_a = a.getDenominator(), d_b = b.getDenominator();
         int lcm = lcm(d_a, d_b);
         a.setNumerator(a.top * lcm / d_a);
@@ -80,21 +80,21 @@ public class Fraction implements Cloneable{
         return i;
     }
 
-    public int getNumerator(){
+    public int getNumerator() {
         fix();
         return top;
     }
 
-    public void setNumerator(int numerator){
+    public void setNumerator(int numerator) {
         top = numerator;
     }
 
-    public int getDenominator(){
+    public int getDenominator() {
         fix();
         return bottom;
     }
 
-    public void setDenominator(int denominator){
+    public void setDenominator(int denominator) {
         if (denominator == 0) throw new IllegalArgumentException("Fractions with denominators of 0 are not defined");
         bottom = denominator;
     }
@@ -116,7 +116,7 @@ public class Fraction implements Cloneable{
         return add(Objects.requireNonNull(other_clone));
     }
 
-    public Fraction multiply(Fraction other){
+    public Fraction multiply(Fraction other) {
         Fraction clone = null, other_clone;
         try {
             clone = clone();

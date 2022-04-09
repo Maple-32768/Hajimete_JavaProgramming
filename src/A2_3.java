@@ -18,8 +18,9 @@ public class A2_3 {
         scan.close();
     }
 
-    public static List<Integer> getPrime_numbers(int max){
-        if (max < 2) throw new IllegalArgumentException("Prime numbers are defined for integers greater than or equal to 2.");
+    public static List<Integer> getPrime_numbers(int max) {
+        if (max < 2)
+            throw new IllegalArgumentException("Prime numbers are defined for integers greater than or equal to 2.");
         List<Integer> result = new ArrayList<>();
         if (max <= max_checked_numbers) {
             for (Integer prime_number : prime_numbers) {
@@ -42,9 +43,9 @@ public class A2_3 {
         return result;
     }
 
-    public static List<Integer> getPrime_numbersFromRange(int min, int max){
+    public static List<Integer> getPrime_numbersFromRange(int min, int max) {
         List<Integer> result = getPrime_numbers(max);
-        while(result.get(0) < min) result.remove(0);
+        while (result.get(0) < min) result.remove(0);
         return result;
     }
 }

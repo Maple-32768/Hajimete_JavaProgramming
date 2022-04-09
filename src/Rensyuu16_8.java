@@ -6,12 +6,12 @@ import java.util.Scanner;
 public class Rensyuu16_8 {
     private static final String file_path = "files/16_8.txt";
 
-    public static void main(String[] args){
-        try(Scanner scan = new Scanner(new BufferedReader(new FileReader(file_path)))){
+    public static void main(String[] args) {
+        try (Scanner scan = new Scanner(new BufferedReader(new FileReader(file_path)))) {
             String str = scan.nextLine();
             System.out.println(str);
             int upper = 0, lower = 0, space = 0;
-            for (int i = 0; i <str.length(); i++) {
+            for (int i = 0; i < str.length(); i++) {
                 char c = str.charAt(i);
                 if ('A' <= c && c <= 'Z') upper++;
                 else if ('a' <= c && c <= 'z') lower++;

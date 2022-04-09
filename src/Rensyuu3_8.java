@@ -16,7 +16,7 @@ public class Rensyuu3_8 {
         scan.close();
     }
 
-    public static void print(int[] coins){
+    public static void print(int[] coins) {
         StringBuilder str = new StringBuilder();
         for (int i = 0; i < JPY_COINS.length; i++) {
             if (i != 0) str.append(", ");

@@ -4,7 +4,6 @@ import java.util.Scanner;
 public class Rensyuu16_13 {
     private static final String input_file_path = "files/16_13_in.txt";
     private static final String output_file_path = "files/16_13_out.txt";
-    private static final String[] subjects = {"国語", "数学", "英語"};
 
     public static void main(String[] args) {
         try (Scanner scan = new Scanner(new BufferedReader(new FileReader(input_file_path)));

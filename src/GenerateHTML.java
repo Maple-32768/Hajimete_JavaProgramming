@@ -16,8 +16,8 @@ public class GenerateHTML {
                 INDENT + INDENT + INDENT + "<label class=\"question\">第" + chapter + "章 練習問題</label>" + System.lineSeparator() +
                 INDENT + INDENT + "</h4>");
         for (int i = 1; i <= amount; i++) {
-            System.out.println(INDENT + INDENT + "<a href=\"" + URL + chapter + '_' + i + ".java\" class=\"mgr-20\">" + System.lineSeparator()+
-                    INDENT + INDENT + INDENT + chapter + '.' + i + System.lineSeparator()+
+            System.out.println(INDENT + INDENT + "<a href=\"" + URL + chapter + '_' + i + ".java\" class=\"mgr-20\">" + System.lineSeparator() +
+                    INDENT + INDENT + INDENT + chapter + '.' + i + System.lineSeparator() +
                     INDENT + INDENT + "</a>");
         }
         scan.close();

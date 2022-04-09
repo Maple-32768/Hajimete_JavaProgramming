@@ -1,8 +1,7 @@
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class A1 {
-    private static final char[] kanji = {'一','二','三'};
+    private static final char[] kanji = {'一', '二', '三'};
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -19,18 +18,18 @@ public class A1 {
             return;
         }
 
-        if (isEqTriangle(lines)){
+        if (isEqTriangle(lines)) {
             System.out.println(getResultString(lines) + "で正三角形が作れます.");
             scan.close();
             return;
         }
 
         boolean iso = isIsoTriangle(lines), right = isRightTriangle(lines, max_index);
-        if (iso && right){
+        if (iso && right) {
             System.out.println(getResultString(lines) + "で直角二等辺三角形が作れます.");
-        } else if(iso){
+        } else if (iso) {
             System.out.println(getResultString(lines) + "で二等辺三角形が作れます.");
-        } else if (right){
+        } else if (right) {
             System.out.println(getResultString(lines) + "で直角三角形が作れます.");
         } else {
             System.out.println(getResultString(lines) + "で三角形が作れます.");
@@ -38,10 +37,10 @@ public class A1 {
         scan.close();
     }
 
-    public static int maxIndex(int[] v){
+    public static int maxIndex(int[] v) {
         int max = Integer.MIN_VALUE, index = -1;
         for (int i = 0; i < v.length; i++) {
-            if (max <= v[i]){
+            if (max <= v[i]) {
                 max = v[i];
                 index = i;
             }
@@ -49,7 +48,7 @@ public class A1 {
         return index;
     }
 
-    public static boolean isTriangle(int[] lines, int maxIndex){
+    public static boolean isTriangle(int[] lines, int maxIndex) {
         int sum = 0;
         for (int i = 0; i < lines.length; i++) {
             if (i == maxIndex) sum -= lines[i];
@@ -58,11 +57,11 @@ public class A1 {
         return sum > 0;
     }
 
-    public static boolean isIsoTriangle(int[] lines){
+    public static boolean isIsoTriangle(int[] lines) {
         return lines[0] == lines[1] || lines[0] == lines[2] || lines[1] == lines[2];
     }
 
-    public static boolean isRightTriangle(int[] lines, int maxIndex){
+    public static boolean isRightTriangle(int[] lines, int maxIndex) {
         int sum = 0;
         for (int i = 0; i < lines.length; i++) {
             if (i == maxIndex) sum -= lines[i] * lines[i];
@@ -71,11 +70,11 @@ public class A1 {
         return sum == 0;
     }
 
-    public static String getResultString(int[] lines){
+    public static String getResultString(int[] lines) {
         return "三つの数 " + lines[0] + " " + lines[1] + " " + lines[2] + " ";
     }
 
-    public static boolean isEqTriangle(int[] lines){
+    public static boolean isEqTriangle(int[] lines) {
         return lines[0] == lines[1] && lines[0] == lines[2];
     }
 

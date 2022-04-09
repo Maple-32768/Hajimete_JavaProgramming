@@ -9,7 +9,7 @@ public class Rensyuu12_9 {
         scan.close();
     }
 
-    public static String reverse(String source){
+    public static String reverse(String source) {
         StringBuilder result = new StringBuilder();
         for (int i = 0; i < source.length(); i++) {
             result.append(source.charAt(source.length() - i - 1));

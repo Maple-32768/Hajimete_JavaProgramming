@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class Rensyuu8_2 {
     public static void main(String[] args) {
         int[] array = new int[10];

@@ -13,7 +13,7 @@ public class Rensyuu8_4 {
         scan.close();
     }
 
-    public static int[] bubble_sort(int[] source){
+    public static int[] bubble_sort(int[] source) {
         int[] result = source.clone();
         for (int i = 0; i < result.length; i++) {
             boolean swapped = false;

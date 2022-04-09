@@ -1,5 +1,5 @@
 public class Rensyuu15_1 {
-    abstract static class GroundVehicle{
+    abstract static class GroundVehicle {
         private final int max_passengers;
         private int passengers;
 
@@ -7,35 +7,36 @@ public class Rensyuu15_1 {
             this.max_passengers = max_passengers;
         }
 
-        protected void getOn(){
+        protected void getOn() {
             if (passengers < max_passengers) passengers++;
         }
 
-        protected void getOff(){
+        protected void getOff() {
             if (passengers > 0) passengers--;
         }
 
         abstract int numOfTire();
+
         abstract boolean haveEngine();
     }
 
-     static class Car extends GroundVehicle{
+    static class Car extends GroundVehicle {
         public Car() {
             super(5);
         }
 
-         @Override
-         int numOfTire() {
-             return 4;
-         }
+        @Override
+        int numOfTire() {
+            return 4;
+        }
 
-         @Override
-         boolean haveEngine() {
-             return true;
-         }
-     }
+        @Override
+        boolean haveEngine() {
+            return true;
+        }
+    }
 
-    static class Truck extends GroundVehicle{
+    static class Truck extends GroundVehicle {
         public Truck() {
             super(3);
         }
@@ -51,7 +52,7 @@ public class Rensyuu15_1 {
         }
     }
 
-    static class MotorBike extends GroundVehicle{
+    static class MotorBike extends GroundVehicle {
         public MotorBike() {
             super(2);
         }
@@ -67,7 +68,7 @@ public class Rensyuu15_1 {
         }
     }
 
-    static class Bicycle extends GroundVehicle{
+    static class Bicycle extends GroundVehicle {
         public Bicycle() {
             super(1);
         }

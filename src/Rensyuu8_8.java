@@ -7,10 +7,10 @@ public class Rensyuu8_8 {
         Scanner scan = new Scanner(System.in);
         System.out.println("日数");
         int days = Integer.parseInt(scan.nextLine()), m = 0, d = days;
-        while (d > days_in_months[m]){
+        while (d > days_in_months[m]) {
             d -= days_in_months[m];
             m++;
         }
-        System.out.println("1月1日から" + days + "日目は" + (m+1) + "月" + (d + 1) + "日");
+        System.out.println("1月1日から" + days + "日目は" + (m + 1) + "月" + (d + 1) + "日");
     }
 }
