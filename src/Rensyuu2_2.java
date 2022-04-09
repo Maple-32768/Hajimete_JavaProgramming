@@ -1,6 +1,5 @@
 public class Rensyuu2_2 {
     private static final String str = "プログラミング";
-    private static final char space = '\u3000'; /* \u3000 は全角スペース */
 
     public static void main(String[] args) {
         for (int i = 0; i < str.length(); i++) {

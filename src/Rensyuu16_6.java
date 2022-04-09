@@ -19,14 +19,4 @@ public class Rensyuu16_6 {
             e.printStackTrace();
         }
     }
-
-    public static double sum(double[] array) {
-        double sum = 0;
-        for (double v : array) sum += v;
-        return sum;
-    }
-
-    public static double average(double[] array) {
-        return sum(array) / array.length;
-    }
 }
