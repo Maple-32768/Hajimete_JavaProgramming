@@ -1,0 +1,13 @@
+原文
+-------------------------------------------------
+This is a pen.
+That is not an apple.
+What color do you like?
+It sounds good!
+When I was going to bed, my cat was sleeping on my bed.
+-------------------------------------------------
+
+大文字 : 6
+小文字 : 91
+スペース : 25
+その他記号など : 16
