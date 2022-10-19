@@ -6,7 +6,7 @@ public class Rensyuu12_1 {
         int a, b;
         System.out.println("a");
         a = Integer.parseInt(scan.nextLine());
-        System.out.println("n");
+        System.out.println("b");
         b = Integer.parseInt(scan.nextLine());
         System.out.println(add(a, b));
         scan.close();
